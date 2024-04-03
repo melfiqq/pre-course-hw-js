@@ -1,6 +1,6 @@
 let passportMarried = {
     name: "Petr",
-    surname: "Petrov",    
+    surname: "Petrov",
     address: {
         country: "USA",
         city: "Bobryisk"
@@ -9,8 +9,11 @@ let passportMarried = {
 
 let passportMarried2 = {
     ...passportMarried,
-    married: true
+    married: true, 
+    address: {
+        ...passportMarried.address
+    }
 };
 
-console.log(passportMarried);
+console.log(passportMarried); 
 console.log(passportMarried2);
