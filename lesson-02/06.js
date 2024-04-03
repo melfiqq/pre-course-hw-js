@@ -7,7 +7,8 @@ let passportWithAddress = {
     }
 };
 
-let passportWithAddressCopy = JSON.parse(JSON.stringify(passportWithAddress));
+
+let passportWithAddressCopy = Object.assign({}, passportWithAddress);
 passportWithAddressCopy.address.city = "Bobryisk";
 
 console.log(passportWithAddress);
